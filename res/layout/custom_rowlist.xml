@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<TableLayout android:id="@+id/tableLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+ <TableRow>
+ <ImageView 
+ 	android:src="@drawable/icon" 
+ 	android:id="@+id/x_thumbnail" 
+ 	android:layout_height="50dp" 
+ 	android:layout_width="50dp"
+ 	android:background="#555555" />
+ <Button
+	android:id="@+id/btBlank"
+	android:text="blank"
+	android:layout_width="15dp"
+	android:layout_height="0dp"
+	android:visibility="invisible"
+	android:focusable="false" />    
+ <LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"> 	
+ <TextView android:id="@+id/x_title" 
+ 	android:layout_height="wrap_content" 
+ 	android:text="title" 
+ 	android:layout_width="fill_parent" />
+ <TextView android:id="@+id/x_fileinfo" 
+ 	android:layout_height="wrap_content" 
+ 	android:text="fileinfo" 
+ 	android:layout_width="fill_parent" 
+ 	android:textSize="10dp" />
+ </LinearLayout>
+ </TableRow>
+</TableLayout>
+
+</LinearLayout>

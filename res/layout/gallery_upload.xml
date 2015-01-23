@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+				
+	<TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+		<TableRow>	
+		 	<TextView  
+				 	android:layout_height="wrap_content" 
+				 	android:text="작성자 "
+				 	android:layout_width="100dip" />
+		 	<EditText 
+			    	android:text="" 
+			    	android:id="@+id/etName" 
+			    	android:layout_width="200dip" 
+			    	android:layout_height="35sp"                                                                                                                                           
+		         	android:singleLine="true"
+		         	android:layout_marginLeft="5px"
+		         	android:layout_marginRight="5px"
+		         	android:layout_marginTop="5px"
+		         	android:textAppearance="?android:attr/textAppearanceSmall" 
+		         	android:hint="이름을 입력해 주세요"
+		        />
+		</TableRow>
+		<TableRow>	
+		 	<TextView  
+				 	android:layout_height="wrap_content" 
+				 	android:text="제목" 
+				 	android:layout_width="50dip" />
+		 	<EditText 
+			    	android:text="" 
+			    	android:id="@+id/etTitle" 
+			    	android:layout_width="200dip" 
+			    	android:layout_height="35sp"                                                                                                                                           
+		         	android:singleLine="true"
+		         	android:layout_marginLeft="5px"
+		         	android:layout_marginRight="5px"
+		         	android:layout_marginTop="5px"
+		         	android:textAppearance="?android:attr/textAppearanceSmall" 
+		         	android:hint="제목을 입력해 주세요"
+		        />
+		</TableRow>
+		<TableRow>	
+		 	<TextView  
+				 	android:layout_height="wrap_content" 
+				 	android:text="패스워드" 
+				 	android:layout_width="50dip" />
+		 	<EditText 
+			    	android:text="" 
+			    	android:id="@+id/etPassword" 
+			    	android:layout_width="200dip" 
+			    	android:layout_height="35sp"                                                                                                                                           
+		         	android:singleLine="true"
+		         	android:layout_marginLeft="5px"
+		         	android:layout_marginRight="5px"
+		         	android:layout_marginTop="5px"
+		         	android:textAppearance="?android:attr/textAppearanceSmall" 
+		         	android:password="true"
+		         	android:hint="패스워드를 입력해 주세요"
+		        />
+		</TableRow>
+		<TableRow>	
+		 	<TextView  
+				 	android:layout_height="wrap_content" 
+				 	android:text="한줄내용" 
+				 	android:layout_width="50dip" />
+			<EditText 
+			    	android:text="" 
+			    	android:id="@+id/etContents" 
+			    	android:layout_width="200dip" 
+			    	android:layout_height="35sp"                                                                                                                                           
+		         	android:singleLine="true"
+		         	android:layout_marginLeft="5px"
+		         	android:layout_marginRight="5px"
+		         	android:layout_marginTop="5px"
+		         	android:textAppearance="?android:attr/textAppearanceSmall" 
+		         	android:hint="간단한 내용을 입력해 주세요"
+		        /> 
+		 </TableRow>
+	</TableLayout>
+	
+	<TableLayout android:layout_height="wrap_content" android:layout_width="300dip">>
+		<ImageView 
+				android:layout_width="300dip" 
+			    android:layout_height="220dip"
+			    android:id="@+id/imgView"
+			    android:gravity="center"
+			    android:padding="5dip"
+			    android:background="#555555"
+			     />
+		<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">		
+			<Button 
+					android:layout_width="wrap_content" 
+				    android:layout_height="wrap_content"
+				    android:id="@+id/btCapture"
+				    android:text="사진촬영"
+			/> 
+		    <Button 
+					android:layout_width="wrap_content" 
+				    android:layout_height="wrap_content"
+				    android:id="@+id/btAlbum"
+				    android:text="앨범사진"
+			/> 
+		</LinearLayout>
+	</TableLayout>
+	
+	<TableLayout android:layout_height="wrap_content" android:layout_width="wrap_content">
+		<View android:layout_width="fill_parent"  android:layout_height="20dp" android:background="#00000000" />
+		 <TableRow android:gravity="center" android:layout_width="fill_parent">	
+		 	<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+		 	<Button 
+					android:layout_width="wrap_content" 
+				    android:layout_height="wrap_content"
+				    android:id="@+id/btUpload"
+				    android:text="확인"
+					/>
+			<Button 
+					android:layout_width="wrap_content" 
+				    android:layout_height="wrap_content"
+				    android:id="@+id/btClose"
+				    android:text="취소"
+					/> 
+			</LinearLayout>
+		 </TableRow>
+	</TableLayout>
+	
+</LinearLayout> 

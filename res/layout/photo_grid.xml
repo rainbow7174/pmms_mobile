@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="30dp" android:background="#ffffff">
+        <ImageButton 
+			android:paddingLeft="3dp"
+			android:paddingTop="5dp" 
+			android:src="@drawable/btn_prev" 
+			android:id="@+id/ibtPrev" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:background="#00000000"
+			android:layout_weight="1" />
+		<Button android:layout_weight="15" android:layout_width="wrap_content" android:layout_height="0dp" android:visibility="invisible" />
+		<ImageButton 
+			android:paddingTop="5dp" 
+			android:src="@drawable/btn_listview" 
+			android:id="@+id/ibtListView" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content" 
+			android:background="#00000000"
+			android:layout_weight="1" />
+        <ImageButton 
+        	android:paddingRight="3dp"
+	        android:paddingTop="5dp" 
+	        android:src="@drawable/btn_gridview" 
+	        android:id="@+id/ibtGridView" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:background="#00000000"
+	        android:layout_weight="1" />
+    </LinearLayout>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="#D6D7DE">
+	    <EditText 
+	    	android:text="" 
+	    	android:id="@+id/etBlank" 
+	    	android:layout_width="0dp" 
+	    	android:layout_height="0sp"                                                                                                                                           
+         	android:singleLine="true"
+         	android:textAppearance="?android:attr/textAppearanceSmall" 
+        /> 
+	    <EditText 
+	    	android:text="" 
+	    	android:id="@+id/searchTxt" 
+	    	android:layout_width="200dp" 
+	    	android:layout_height="35sp"                                                                                                                                           
+         	android:singleLine="true"
+         	android:layout_marginLeft="5px"
+         	android:layout_marginRight="5px"
+         	android:layout_marginTop="5px"
+         	android:textAppearance="?android:attr/textAppearanceSmall" 
+         	android:hint="검색어를 입력해 주세요"
+        /> 
+	    <Button 
+	    android:text="검색" 
+	    android:id="@+id/searchBtn" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="35sp" 
+	    android:layout_marginTop="5px" />
+	    <Button 
+		android:id="@+id/btPrev"
+		android:layout_width="wrap_content"
+		android:layout_height="35sp"
+		android:text="◀"
+		android:visibility="invisible"
+		android:layout_marginTop="5px" />
+		<Button 
+		android:id="@+id/btNext"
+		android:layout_width="wrap_content"
+		android:layout_height="35sp"
+		android:text="▶"
+		android:visibility="invisible"
+		android:layout_marginTop="5px" />
+	</LinearLayout>
+	<View android:layout_width="fill_parent"  android:layout_height="10dp" android:background="#000000" />
+	<GridView android:id="@+id/gvPhoto" 
+	  		android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:numColumns="3"
+	  		android:verticalSpacing="5dp"
+	  		android:horizontalSpacing="5dp"
+	  		android:gravity="center" />
+	<!--  
+	<TextView android:layout_width="wrap_content" 
+		    android:id="@android:id/empty" 
+		    android:text="검색된 데이터가 없습니다." 
+		    android:layout_height="wrap_content" 
+		    android:layout_gravity="center_horizontal" />
+	-->
+</LinearLayout>
+

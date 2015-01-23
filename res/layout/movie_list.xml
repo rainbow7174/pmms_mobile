@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="30dp" android:background="#ffffff">
+		<ImageButton android:paddingTop="5dp" android:src="@drawable/btn_prev" android:id="@+id/btPrev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#00000000" />
+    </LinearLayout>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="#FFD6D7DE">
+	    <EditText 
+	    	android:text="" 
+	    	android:id="@+id/searchTxt" 
+	    	android:layout_width="200dp" 
+	    	android:layout_height="35sp"                                                                                                                                           
+         	android:singleLine="true"
+         	android:layout_marginLeft="5px"
+         	android:layout_marginRight="5px"
+         	android:layout_marginTop="5px"
+         	android:textAppearance="?android:attr/textAppearanceSmall" 
+         	android:hint="검색어를 입력해 주세요"
+        /> 
+	    <Button android:text="검색" android:id="@+id/searchBtn" android:layout_width="wrap_content" android:layout_height="35sp" android:layout_marginTop="5px"></Button>
+	</LinearLayout>
+	<View android:layout_width="fill_parent"  android:layout_height="10dp" android:background="#000000" />
+	<ListView android:id="@+id/android:list" 
+		android:layout_height="fill_parent" 
+		android:layout_width="fill_parent"
+		android:divider="#000000"
+		android:dividerHeight="3px" />
+	<TextView android:layout_width="wrap_content" 
+	    android:id="@android:id/empty" 
+	    android:text="검색된 데이터가 없습니다." 
+	    android:layout_height="wrap_content" 
+	    android:layout_gravity="center_horizontal" />
+</LinearLayout>
